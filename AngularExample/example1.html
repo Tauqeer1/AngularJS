@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Example 1</title>
+</head>
+<body>
+
+<div ng-app>
+    <p>Name : <input type="text" ng-model="name"></p>
+
+    <h1 ng-bind="name"></h1>    <!--It will not show in a raw state -->
+    <p>{{name}}</p> <!--Similar to ng-bind but it shows in the raw form when angular js is compile-->
+
+</div>
+
+<script>
+
+</script>
+<script src="bower_components/angular/angular.js"></script>
+</body>
+</html>
